@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\Wei Zheng\Desktop\NUS\Y2S1\EE2020\Project\audio_effects\audio_effects.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied
