@@ -158,8 +158,12 @@ module AUDIO_FX_TOP(
         delay_mic <= MIC_in;
       end
       
-      //wire cdl;
-      //FLEXIBLE_CLK_DIVIDER cdlk(CLK, 5000, cdl);
+      //wire clk_delay_1000ms;
+      //wire clk_delay_750ms;
+      //wire clk_delay_500ms;
+      //wire clk_delay_250ms;
+      //FLEXIBLE_CLK_DIVIDER cd1000(CLK, 5000, clk_delay_1000ms);
+      //
       //init delay with 1 second
       //DELAY_INPUT delay250MS(cdl, MIC_in, delay_out);
       ///////////////////////////
@@ -175,6 +179,7 @@ module AUDIO_FX_TOP(
                 startMem = 0;
         //end
       end      
+      
       
       
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -194,7 +199,7 @@ module AUDIO_FX_TOP(
         clk_1865, clk_1109, clk_1245, clk_1480, clk_1661, //A#,C#,D#,F#,G#
         keyboard_note_out
       );
-      assign led = keyout[7:0]; //checker, uncomment when not needed
+      assign led = keyout[15:0]; //checker, uncomment when not needed
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       
       

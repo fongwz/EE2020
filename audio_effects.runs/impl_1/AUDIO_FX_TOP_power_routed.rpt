@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Thu Nov 02 19:27:11 2017
+| Date             : Thu Nov 02 20:48:58 2017
 | Host             : DESKTOP-1HN8OHR running 64-bit major release  (build 9200)
 | Command          : report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx
 | Design           : AUDIO_FX_TOP
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.089 |
-| Dynamic (W)              | 0.017 |
+| Total On-Chip Power (W)  | 0.087 |
+| Dynamic (W)              | 0.016 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.005 |        3 |       --- |             --- |
-| Slice Logic             |     0.002 |     3600 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      549 |     20800 |            2.64 |
-|   CARRY4                |    <0.001 |      216 |      8150 |            2.65 |
-|   Register              |    <0.001 |      808 |     41600 |            1.94 |
-|   Others                |     0.000 |       84 |       --- |             --- |
-|   BUFG                  |     0.000 |        3 |        32 |            9.38 |
-|   LUT as Shift Register |     0.000 |     1896 |      9600 |           19.75 |
-| Signals                 |     0.003 |     1714 |       --- |             --- |
-| I/O                     |     0.008 |       44 |       106 |           41.51 |
+| Slice Logic             |     0.002 |     1624 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      542 |     20800 |            2.61 |
+|   CARRY4                |    <0.001 |      205 |      8150 |            2.52 |
+|   Register              |    <0.001 |      746 |     41600 |            1.79 |
+|   BUFG                  |    <0.001 |        4 |        32 |           12.50 |
+|   LUT as Shift Register |    <0.001 |        2 |      9600 |            0.02 |
+|   Others                |     0.000 |       80 |       --- |             --- |
+| Signals                 |     0.002 |     1181 |       --- |             --- |
+| I/O                     |     0.007 |       44 |       106 |           41.51 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.089 |          |           |                 |
+| Total                   |     0.087 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -93,7 +93,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -139,7 +139,7 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| AUDIO_FX_TOP       |     0.017 |
+| AUDIO_FX_TOP       |     0.016 |
 |   btnC             |     0.000 |
 |     dff1           |     0.000 |
 |     dff2           |     0.000 |
@@ -155,8 +155,6 @@ Table of Contents
 |   btnG             |     0.000 |
 |     dff1           |     0.000 |
 |     dff2           |     0.000 |
-|   cdlk             |    <0.001 |
-|     nolabel_line31 |    <0.001 |
 |   clk1047          |    <0.001 |
 |     nolabel_line31 |    <0.001 |
 |   clk1109          |    <0.001 |
@@ -189,7 +187,6 @@ Table of Contents
 |   clk50m           |    <0.001 |
 |   clk700           |    <0.001 |
 |     nolabel_line31 |    <0.001 |
-|   delay250MS       |     0.000 |
 |   display          |    <0.001 |
 |     BTI            |     0.000 |
 |     DisplayOut     |    <0.001 |

@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Nov 02 19:19:43 2017
-# Process ID: 2940
+# Start of session at: Thu Nov 02 20:46:28 2017
+# Process ID: 3992
 # Current directory: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1
 # Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
 # Log file: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
@@ -17,9 +17,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9272 
+INFO: Helper process launched with PID 15280 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 286.895 ; gain = 80.465
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 287.066 ; gain = 80.379
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 INFO: [Synth 8-638] synthesizing module 'CLK_20K' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/CLK_20K.v:23]
@@ -41,44 +41,35 @@ INFO: [Synth 8-256] done synthesizing module 'my_dff' (6#1) [C:/Users/Wei Zheng/
 INFO: [Synth 8-256] done synthesizing module 'SINGLE_PULSE_DFF' (7#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SINGLE_PULSE_DFF.v:23]
 INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
 INFO: [Synth 8-256] done synthesizing module 'SPI' (8#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
-INFO: [Synth 8-638] synthesizing module 'DELAY_INPUT' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/DELAY_INPUT.v:23]
-INFO: [Synth 8-256] done synthesizing module 'DELAY_INPUT' (9#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/DELAY_INPUT.v:23]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-2940-DESKTOP-1HN8OHR/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (10#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-2940-DESKTOP-1HN8OHR/realtime/dist_mem_gen_0_stub.v:6]
-WARNING: [Synth 8-689] width (12) of port connection 'spo' does not match port width (13) of module 'dist_mem_gen_0' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:170]
-INFO: [Synth 8-638] synthesizing module 'SSegDisp' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/SSegDisp.v:5]
-INFO: [Synth 8-638] synthesizing module 'BINtoINT' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/BINtoINT.v:5]
-INFO: [Synth 8-256] done synthesizing module 'BINtoINT' (11#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/BINtoINT.v:5]
-INFO: [Synth 8-638] synthesizing module 'INTtoSEG' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/INTtoSEG.v:4]
-INFO: [Synth 8-256] done synthesizing module 'INTtoSEG' (12#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/INTtoSEG.v:4]
-INFO: [Synth 8-638] synthesizing module 'Sev_Seg' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/Sev_Seg.v:4]
-INFO: [Synth 8-256] done synthesizing module 'Sev_Seg' (13#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/Sev_Seg.v:4]
-INFO: [Synth 8-256] done synthesizing module 'SSegDisp' (14#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/Seven Seg/SSegDisp.v:5]
-INFO: [Synth 8-638] synthesizing module 'USB_KEYBOARD' [D:/ee2020basys/Basys-3-Keyboard/src/hdl/top.v:26]
-INFO: [Synth 8-638] synthesizing module 'PS2Receiver' [D:/ee2020basys/Basys-3-Keyboard/src/hdl/PS2Receiver.v:23]
-INFO: [Synth 8-638] synthesizing module 'debouncer' [D:/ee2020basys/Basys-3-Keyboard/src/hdl/debouncer.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-3992-DESKTOP-1HN8OHR/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (9#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-3992-DESKTOP-1HN8OHR/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (12) of port connection 'spo' does not match port width (13) of module 'dist_mem_gen_0' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:174]
+INFO: [Synth 8-638] synthesizing module 'SSegDisp' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SSegDisp.v:5]
+INFO: [Synth 8-638] synthesizing module 'BINtoINT' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/BINtoINT.v:5]
+INFO: [Synth 8-256] done synthesizing module 'BINtoINT' (10#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/BINtoINT.v:5]
+INFO: [Synth 8-638] synthesizing module 'INTtoSEG' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/INTtoSEG.v:4]
+INFO: [Synth 8-256] done synthesizing module 'INTtoSEG' (11#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/INTtoSEG.v:4]
+INFO: [Synth 8-638] synthesizing module 'Sev_Seg' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/Sev_Seg.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Sev_Seg' (12#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/Sev_Seg.v:4]
+INFO: [Synth 8-256] done synthesizing module 'SSegDisp' (13#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SSegDisp.v:5]
+INFO: [Synth 8-638] synthesizing module 'USB_KEYBOARD' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/top.v:26]
+INFO: [Synth 8-638] synthesizing module 'PS2Receiver' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/debouncer.v:23]
 	Parameter COUNT_MAX bound to: 19 - type: integer 
 	Parameter COUNT_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'debouncer' (15#1) [D:/ee2020basys/Basys-3-Keyboard/src/hdl/debouncer.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/ee2020basys/Basys-3-Keyboard/src/hdl/PS2Receiver.v:55]
-INFO: [Synth 8-256] done synthesizing module 'PS2Receiver' (16#1) [D:/ee2020basys/Basys-3-Keyboard/src/hdl/PS2Receiver.v:23]
-INFO: [Synth 8-256] done synthesizing module 'USB_KEYBOARD' (17#1) [D:/ee2020basys/Basys-3-Keyboard/src/hdl/top.v:26]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (14#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/PS2Receiver.v:55]
+INFO: [Synth 8-256] done synthesizing module 'PS2Receiver' (15#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-256] done synthesizing module 'USB_KEYBOARD' (16#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/top.v:26]
 INFO: [Synth 8-638] synthesizing module 'KEYBOARD_MAP' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:23]
-INFO: [Synth 8-256] done synthesizing module 'KEYBOARD_MAP' (18#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:23]
+INFO: [Synth 8-256] done synthesizing module 'KEYBOARD_MAP' (17#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:23]
 INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/Wei Zheng/Desktop/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (19#1) [C:/Users/Wei Zheng/Desktop/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (18#1) [C:/Users/Wei Zheng/Desktop/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+WARNING: [Synth 8-3848] Net delay_out in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:152]
 WARNING: [Synth 8-3848] Net led_frequency in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:133]
-INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (20#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[15] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[14] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[13] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[12] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[11] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[10] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[9] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[8] driven by constant 0
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (19#1) [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 398.660 ; gain = 192.230
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 323.633 ; gain = 116.945
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -88,29 +79,29 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 WARNING: [Synth 8-3295] tying undriven pin clk20:desired_freq[0] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:133]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
-WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:206]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:211]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 398.660 ; gain = 192.230
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 323.633 ; gain = 116.945
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'hello' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:170]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'hello' [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:174]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-2940-DESKTOP-1HN8OHR/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
-Finished Parsing XDC File [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-2940-DESKTOP-1HN8OHR/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
+Parsing XDC File [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-3992-DESKTOP-1HN8OHR/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
+Finished Parsing XDC File [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-3992-DESKTOP-1HN8OHR/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
 Parsing XDC File [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 Finished Parsing XDC File [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
@@ -120,22 +111,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 737.211 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 617.875 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "CLK20K0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -161,24 +152,22 @@ INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address siz
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:04 ; elapsed = 00:04:06 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------------+------------+----------+
 |      |RTL Partition        |Replication |Instances |
 +------+---------------------+------------+----------+
-|1     |FLEXIBLE_CLK_DIVIDER |          17|      3864|
-|2     |DELAY_INPUT__GB0     |           1|     30000|
-|3     |DELAY_INPUT__GB1     |           1|     30000|
-|4     |AUDIO_FX_TOP__GC0    |           1|      4871|
+|1     |FLEXIBLE_CLK_DIVIDER |          16|      3864|
+|2     |AUDIO_FX_TOP__GC0    |           1|      4871|
 +------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 19    
+	   2 Input     32 Bit       Adders := 18    
 	   2 Input     13 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
@@ -187,14 +176,14 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 2     
 	               16 Bit    Registers := 3     
 	               13 Bit    Registers := 1     
-	               12 Bit    Registers := 5002  
+	               12 Bit    Registers := 2     
 	                8 Bit    Registers := 1     
 	                7 Bit    Registers := 5     
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 3     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 37    
+	                1 Bit    Registers := 36    
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 2     
@@ -211,7 +200,7 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 27    
+	   2 Input      1 Bit        Muxes := 26    
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 3     
@@ -243,10 +232,6 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
-Module DELAY_INPUT 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 5000  
 Module CLK_20K 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -422,7 +407,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:04:06 ; elapsed = 00:04:07 . Memory (MB): peak = 737.211 ; gain = 530.781
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -431,67 +416,54 @@ INFO: [Synth 8-5545] ROM "clk20k/COUNT0" won't be mapped to RAM because address 
 INFO: [Synth 8-5545] ROM "clk20k/CLK20K0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk50m/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clk50m/CLK50M0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[15] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[14] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[13] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[12] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[11] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[10] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[9] driven by constant 0
-WARNING: [Synth 8-3917] design AUDIO_FX_TOP has port led[8] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:05:55 ; elapsed = 00:05:57 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:05:55 ; elapsed = 00:05:57 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Parallel Reinference  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 617.875 ; gain = 411.188
 
 Report RTL Partitions: 
 +------+---------------------+------------+----------+
 |      |RTL Partition        |Replication |Instances |
 +------+---------------------+------------+----------+
-|1     |FLEXIBLE_CLK_DIVIDER |          17|      3864|
-|2     |DELAY_INPUT__GB0     |           1|     30000|
-|3     |DELAY_INPUT__GB1     |           1|     30000|
-|4     |AUDIO_FX_TOP__GC0    |           1|      4839|
+|1     |FLEXIBLE_CLK_DIVIDER |          16|      3864|
+|2     |AUDIO_FX_TOP__GC0    |           1|      4839|
 +------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[6]' (FDE) to 'i_2/keyboard/uut/keycode_reg[6]'
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[7]' (FDE) to 'i_2/keyboard/uut/keycode_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[5]' (FDE) to 'i_2/keyboard/uut/keycode_reg[5]'
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[4]' (FDE) to 'i_2/keyboard/uut/keycode_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[0]' (FDE) to 'i_2/keyboard/uut/keycode_reg[0]'
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[1]' (FDE) to 'i_2/keyboard/uut/keycode_reg[1]'
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[2]' (FDE) to 'i_2/keyboard/uut/keycode_reg[2]'
-INFO: [Synth 8-3886] merging instance 'i_2/keyboard/uut/dataprev_reg[3]' (FDE) to 'i_2/keyboard/uut/keycode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[0]' (FDE) to 'i_0/keyboard/uut/keycode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[1]' (FDE) to 'i_0/keyboard/uut/keycode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[2]' (FDE) to 'i_0/keyboard/uut/keycode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[3]' (FDE) to 'i_0/keyboard/uut/keycode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[4]' (FDE) to 'i_0/keyboard/uut/keycode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[5]' (FDE) to 'i_0/keyboard/uut/keycode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[6]' (FDE) to 'i_0/keyboard/uut/keycode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[7]' (FDE) to 'i_0/keyboard/uut/keycode_reg[7]'
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:06:08 ; elapsed = 00:06:10 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:06:08 ; elapsed = 00:06:10 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 617.875 ; gain = 411.188
 
 Report RTL Partitions: 
 +------+-------------------------+------------+----------+
 |      |RTL Partition            |Replication |Instances |
 +------+-------------------------+------------+----------+
 |1     |FLEXIBLE_CLK_DIVIDER     |           1|       101|
-|2     |DELAY_INPUT__GB0         |           1|     30000|
-|3     |DELAY_INPUT__GB1         |           1|     30000|
-|4     |AUDIO_FX_TOP__GC0        |           1|      1632|
-|5     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
-|6     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
-|7     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
-|8     |FLEXIBLE_CLK_DIVIDER__4  |           1|       101|
-|9     |FLEXIBLE_CLK_DIVIDER__5  |           1|       100|
-|10    |FLEXIBLE_CLK_DIVIDER__6  |           1|       100|
-|11    |FLEXIBLE_CLK_DIVIDER__7  |           1|       102|
-|12    |FLEXIBLE_CLK_DIVIDER__8  |           1|       101|
-|13    |FLEXIBLE_CLK_DIVIDER__9  |           1|       101|
-|14    |FLEXIBLE_CLK_DIVIDER__10 |           1|        99|
-|15    |FLEXIBLE_CLK_DIVIDER__11 |           1|       103|
-|16    |FLEXIBLE_CLK_DIVIDER__12 |           1|       102|
-|17    |FLEXIBLE_CLK_DIVIDER__13 |           1|       103|
-|18    |FLEXIBLE_CLK_DIVIDER__14 |           1|       100|
-|19    |FLEXIBLE_CLK_DIVIDER__15 |           1|       101|
+|2     |AUDIO_FX_TOP__GC0        |           1|      1601|
+|3     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
+|4     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
+|5     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
+|6     |FLEXIBLE_CLK_DIVIDER__4  |           1|       101|
+|7     |FLEXIBLE_CLK_DIVIDER__5  |           1|       100|
+|8     |FLEXIBLE_CLK_DIVIDER__6  |           1|       100|
+|9     |FLEXIBLE_CLK_DIVIDER__7  |           1|       102|
+|10    |FLEXIBLE_CLK_DIVIDER__8  |           1|       101|
+|11    |FLEXIBLE_CLK_DIVIDER__9  |           1|       101|
+|12    |FLEXIBLE_CLK_DIVIDER__10 |           1|        99|
+|13    |FLEXIBLE_CLK_DIVIDER__11 |           1|       103|
+|14    |FLEXIBLE_CLK_DIVIDER__12 |           1|       102|
+|15    |FLEXIBLE_CLK_DIVIDER__13 |           1|       103|
+|16    |FLEXIBLE_CLK_DIVIDER__14 |           1|       100|
 +------+-------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -500,10 +472,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:18 ; elapsed = 00:06:20 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:06:19 ; elapsed = 00:06:21 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 617.875 ; gain = 411.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -511,24 +483,21 @@ Report RTL Partitions:
 |      |RTL Partition            |Replication |Instances |
 +------+-------------------------+------------+----------+
 |1     |FLEXIBLE_CLK_DIVIDER     |           1|       101|
-|2     |DELAY_INPUT__GB0         |           1|     30000|
-|3     |DELAY_INPUT__GB1         |           1|     30000|
-|4     |AUDIO_FX_TOP__GC0        |           1|      1632|
-|5     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
-|6     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
-|7     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
-|8     |FLEXIBLE_CLK_DIVIDER__4  |           1|       101|
-|9     |FLEXIBLE_CLK_DIVIDER__5  |           1|       100|
-|10    |FLEXIBLE_CLK_DIVIDER__6  |           1|       100|
-|11    |FLEXIBLE_CLK_DIVIDER__7  |           1|       102|
-|12    |FLEXIBLE_CLK_DIVIDER__8  |           1|       101|
-|13    |FLEXIBLE_CLK_DIVIDER__9  |           1|       101|
-|14    |FLEXIBLE_CLK_DIVIDER__10 |           1|        99|
-|15    |FLEXIBLE_CLK_DIVIDER__11 |           1|       103|
-|16    |FLEXIBLE_CLK_DIVIDER__12 |           1|       102|
-|17    |FLEXIBLE_CLK_DIVIDER__13 |           1|       103|
-|18    |FLEXIBLE_CLK_DIVIDER__14 |           1|       100|
-|19    |FLEXIBLE_CLK_DIVIDER__15 |           1|       101|
+|2     |AUDIO_FX_TOP__GC0        |           1|      1601|
+|3     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
+|4     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
+|5     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
+|6     |FLEXIBLE_CLK_DIVIDER__4  |           1|       101|
+|7     |FLEXIBLE_CLK_DIVIDER__5  |           1|       100|
+|8     |FLEXIBLE_CLK_DIVIDER__6  |           1|       100|
+|9     |FLEXIBLE_CLK_DIVIDER__7  |           1|       102|
+|10    |FLEXIBLE_CLK_DIVIDER__8  |           1|       101|
+|11    |FLEXIBLE_CLK_DIVIDER__9  |           1|       101|
+|12    |FLEXIBLE_CLK_DIVIDER__10 |           1|        99|
+|13    |FLEXIBLE_CLK_DIVIDER__11 |           1|       103|
+|14    |FLEXIBLE_CLK_DIVIDER__12 |           1|       102|
+|15    |FLEXIBLE_CLK_DIVIDER__13 |           1|       103|
+|16    |FLEXIBLE_CLK_DIVIDER__14 |           1|       100|
 +------+-------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -536,16 +505,16 @@ Start Technology Mapping
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/THOUSAND/SEG_reg[5] )
 WARNING: [Synth 8-3332] Sequential element (display/THOUSAND/SEG_reg[5]) is unused and will be removed from module AUDIO_FX_TOP.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:24 ; elapsed = 00:06:26 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:06:24 ; elapsed = 00:06:26 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 623.469 ; gain = 416.781
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:06:24 ; elapsed = 00:06:26 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -562,7 +531,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -575,7 +544,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -587,37 +556,37 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+-----------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name      | RTL Name          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+-----------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|DELAY_INPUT__GB0 | mem_reg[2499][11] | 2500   | 12    | NO           | YES                | YES               | 0      | 948     | 
-|DELAY_INPUT__GB1 | mem_reg[4999][11] | 2500   | 12    | NO           | YES                | YES               | 0      | 948     | 
-+-----------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++-------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|AUDIO_FX_TOP | u2/temp1_reg[15] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|AUDIO_FX_TOP | u2/temp2_reg[15] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -638,17 +607,17 @@ Report Cell Usage:
 |      |Cell           |Count |
 +------+---------------+------+
 |1     |dist_mem_gen_0 |     1|
-|2     |BUFG           |     4|
-|3     |CARRY4         |   224|
-|4     |LUT1           |   632|
-|5     |LUT2           |    83|
-|6     |LUT3           |   195|
-|7     |LUT4           |    44|
-|8     |LUT5           |    53|
-|9     |LUT6           |   187|
-|10    |SRLC32E        |  1896|
-|11    |FDRE           |   816|
-|12    |FDSE           |     5|
+|2     |BUFG           |     5|
+|3     |CARRY4         |   213|
+|4     |LUT1           |   599|
+|5     |LUT2           |    84|
+|6     |LUT3           |   209|
+|7     |LUT4           |    43|
+|8     |LUT5           |    42|
+|9     |LUT6           |   180|
+|10    |SRL16E         |     2|
+|11    |FDRE           |   756|
+|12    |FDSE           |     3|
 |13    |IBUF           |    12|
 |14    |OBUF           |    33|
 +------+---------------+------+
@@ -657,89 +626,85 @@ Report Instance Areas:
 +------+-------------------+------------------------+------+
 |      |Instance           |Module                  |Cells |
 +------+-------------------+------------------------+------+
-|1     |top                |                        |  4197|
+|1     |top                |                        |  2194|
 |2     |  btnC             |SINGLE_PULSE_DFF        |     2|
-|3     |    dff1           |my_dff_45               |     1|
-|4     |    dff2           |my_dff_46               |     1|
+|3     |    dff1           |my_dff_43               |     1|
+|4     |    dff2           |my_dff_44               |     1|
 |5     |  btnD             |SINGLE_PULSE_DFF_0      |     3|
-|6     |    dff1           |my_dff_43               |     2|
-|7     |    dff2           |my_dff_44               |     1|
+|6     |    dff1           |my_dff_41               |     2|
+|7     |    dff2           |my_dff_42               |     1|
 |8     |  btnE             |SINGLE_PULSE_DFF_1      |     5|
-|9     |    dff1           |my_dff_41               |     1|
-|10    |    dff2           |my_dff_42               |     4|
+|9     |    dff1           |my_dff_39               |     1|
+|10    |    dff2           |my_dff_40               |     4|
 |11    |  btnF             |SINGLE_PULSE_DFF_2      |     4|
-|12    |    dff1           |my_dff_39               |     1|
-|13    |    dff2           |my_dff_40               |     3|
+|12    |    dff1           |my_dff_37               |     1|
+|13    |    dff2           |my_dff_38               |     3|
 |14    |  btnG             |SINGLE_PULSE_DFF_3      |     2|
 |15    |    dff1           |my_dff                  |     1|
-|16    |    dff2           |my_dff_38               |     1|
-|17    |  cdlk             |FLEXIBLE_CLK_DIVIDER    |    94|
-|18    |    nolabel_line31 |CLK_VAR_37              |    94|
-|19    |  clk1047          |FLEXIBLE_CLK_DIVIDER_4  |    94|
-|20    |    nolabel_line31 |CLK_VAR_36              |    94|
-|21    |  clk1109          |FLEXIBLE_CLK_DIVIDER_5  |    94|
-|22    |    nolabel_line31 |CLK_VAR_35              |    94|
-|23    |  clk1175          |FLEXIBLE_CLK_DIVIDER_6  |    94|
-|24    |    nolabel_line31 |CLK_VAR_34              |    94|
-|25    |  clk1245          |FLEXIBLE_CLK_DIVIDER_7  |    94|
-|26    |    nolabel_line31 |CLK_VAR_33              |    94|
-|27    |  clk1319          |FLEXIBLE_CLK_DIVIDER_8  |    94|
-|28    |    nolabel_line31 |CLK_VAR_32              |    94|
-|29    |  clk1397          |FLEXIBLE_CLK_DIVIDER_9  |    94|
-|30    |    nolabel_line31 |CLK_VAR_31              |    94|
-|31    |  clk1480          |FLEXIBLE_CLK_DIVIDER_10 |    94|
-|32    |    nolabel_line31 |CLK_VAR_30              |    94|
-|33    |  clk1568          |FLEXIBLE_CLK_DIVIDER_11 |    94|
-|34    |    nolabel_line31 |CLK_VAR_29              |    94|
-|35    |  clk16            |FLEXIBLE_CLK_DIVIDER_12 |    94|
-|36    |    nolabel_line31 |CLK_VAR_28              |    94|
-|37    |  clk1661          |FLEXIBLE_CLK_DIVIDER_13 |    94|
-|38    |    nolabel_line31 |CLK_VAR_27              |    94|
-|39    |  clk1760          |FLEXIBLE_CLK_DIVIDER_14 |    94|
-|40    |    nolabel_line31 |CLK_VAR_26              |    94|
-|41    |  clk1865          |FLEXIBLE_CLK_DIVIDER_15 |    94|
-|42    |    nolabel_line31 |CLK_VAR_25              |    94|
-|43    |  clk1975          |FLEXIBLE_CLK_DIVIDER_16 |    94|
-|44    |    nolabel_line31 |CLK_VAR_24              |    94|
-|45    |  clk20k           |CLK_20K                 |    83|
-|46    |  clk3             |FLEXIBLE_CLK_DIVIDER_17 |    94|
-|47    |    nolabel_line31 |CLK_VAR_23              |    94|
-|48    |  clk50m           |CLK_50M                 |    83|
-|49    |  clk700           |FLEXIBLE_CLK_DIVIDER_18 |    94|
-|50    |    nolabel_line31 |CLK_VAR                 |    94|
-|51    |  delay250MS       |DELAY_INPUT             |  1944|
-|52    |  display          |SSegDisp                |   236|
-|53    |    BTI            |BINtoINT                |   143|
-|54    |    DisplayOut     |Sev_Seg                 |    40|
-|55    |    HUNDREDS       |INTtoSEG                |    15|
-|56    |    ONES           |INTtoSEG_20             |    25|
-|57    |    TENS           |INTtoSEG_21             |     7|
-|58    |    THOUSAND       |INTtoSEG_22             |     6|
-|59    |  keyboard         |USB_KEYBOARD            |    85|
-|60    |    uut            |PS2Receiver             |    82|
-|61    |      db_clk       |debouncer               |    15|
-|62    |      db_data      |debouncer_19            |    24|
-|63    |  u1               |SPI                     |    77|
-|64    |  u2               |DA2RefComp              |    48|
+|16    |    dff2           |my_dff_36               |     1|
+|17    |  clk1047          |FLEXIBLE_CLK_DIVIDER    |    94|
+|18    |    nolabel_line31 |CLK_VAR_35              |    94|
+|19    |  clk1109          |FLEXIBLE_CLK_DIVIDER_4  |    94|
+|20    |    nolabel_line31 |CLK_VAR_34              |    94|
+|21    |  clk1175          |FLEXIBLE_CLK_DIVIDER_5  |    94|
+|22    |    nolabel_line31 |CLK_VAR_33              |    94|
+|23    |  clk1245          |FLEXIBLE_CLK_DIVIDER_6  |    94|
+|24    |    nolabel_line31 |CLK_VAR_32              |    94|
+|25    |  clk1319          |FLEXIBLE_CLK_DIVIDER_7  |    94|
+|26    |    nolabel_line31 |CLK_VAR_31              |    94|
+|27    |  clk1397          |FLEXIBLE_CLK_DIVIDER_8  |    94|
+|28    |    nolabel_line31 |CLK_VAR_30              |    94|
+|29    |  clk1480          |FLEXIBLE_CLK_DIVIDER_9  |    94|
+|30    |    nolabel_line31 |CLK_VAR_29              |    94|
+|31    |  clk1568          |FLEXIBLE_CLK_DIVIDER_10 |    94|
+|32    |    nolabel_line31 |CLK_VAR_28              |    94|
+|33    |  clk16            |FLEXIBLE_CLK_DIVIDER_11 |    94|
+|34    |    nolabel_line31 |CLK_VAR_27              |    94|
+|35    |  clk1661          |FLEXIBLE_CLK_DIVIDER_12 |    94|
+|36    |    nolabel_line31 |CLK_VAR_26              |    94|
+|37    |  clk1760          |FLEXIBLE_CLK_DIVIDER_13 |    94|
+|38    |    nolabel_line31 |CLK_VAR_25              |    94|
+|39    |  clk1865          |FLEXIBLE_CLK_DIVIDER_14 |    94|
+|40    |    nolabel_line31 |CLK_VAR_24              |    94|
+|41    |  clk1975          |FLEXIBLE_CLK_DIVIDER_15 |    94|
+|42    |    nolabel_line31 |CLK_VAR_23              |    94|
+|43    |  clk20k           |CLK_20K                 |    83|
+|44    |  clk3             |FLEXIBLE_CLK_DIVIDER_16 |    94|
+|45    |    nolabel_line31 |CLK_VAR_22              |    94|
+|46    |  clk50m           |CLK_50M                 |    83|
+|47    |  clk700           |FLEXIBLE_CLK_DIVIDER_17 |    94|
+|48    |    nolabel_line31 |CLK_VAR                 |    94|
+|49    |  display          |SSegDisp                |   236|
+|50    |    BTI            |BINtoINT                |   143|
+|51    |    DisplayOut     |Sev_Seg                 |    40|
+|52    |    HUNDREDS       |INTtoSEG                |    15|
+|53    |    ONES           |INTtoSEG_19             |    25|
+|54    |    TENS           |INTtoSEG_20             |     7|
+|55    |    THOUSAND       |INTtoSEG_21             |     6|
+|56    |  keyboard         |USB_KEYBOARD            |    89|
+|57    |    uut            |PS2Receiver             |    86|
+|58    |      db_clk       |debouncer               |    16|
+|59    |      db_data      |debouncer_18            |    24|
+|60    |  u1               |SPI                     |    77|
+|61    |  u2               |DA2RefComp              |    78|
 +------+-------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 530.781
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:59 ; elapsed = 00:06:14 . Memory (MB): peak = 737.211 ; gain = 181.746
-Synthesis Optimization Complete : Time (s): cpu = 00:06:25 ; elapsed = 00:06:28 . Memory (MB): peak = 737.211 ; gain = 530.781
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 623.469 ; gain = 112.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 623.469 ; gain = 416.781
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 236 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 225 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 25 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 24 instances were transformed.
-  SRLC32E => SRL16E: 24 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-81 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+79 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:25 ; elapsed = 00:06:27 . Memory (MB): peak = 737.211 ; gain = 522.777
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 737.211 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 02 19:26:14 2017...
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 623.469 ; gain = 408.844
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 623.469 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 02 20:47:28 2017...
