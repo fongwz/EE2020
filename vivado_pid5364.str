@@ -332,3 +332,10 @@ selectCodeEditor("volume_indicator.v", 12, 343); // bH:N (JPanel:JComponent, cv:
 // TclEventType: DG_UPDATE_GRAPH
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 113 MB (+499kb) [00:34:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 605 MB. GUI used memory: 65 MB. Current time: 11/2/17 9:37:07 PM SGT
+// Elapsed time: 521 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "volume_indicator.v", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AUDIO_FX_TOP.v", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("KEYBOARD_MAP.v", 236, 296); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("KEYBOARD_MAP.v", 20, 351); // bH:N (JPanel:JComponent, cv:JFrame)
