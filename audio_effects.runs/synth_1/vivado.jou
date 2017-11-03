@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Thu Nov 02 21:17:29 2017
-# Process ID: 7024
+# Start of session at: Fri Nov 03 12:34:19 2017
+# Process ID: 11520
 # Current directory: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1
 # Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
 # Log file: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
