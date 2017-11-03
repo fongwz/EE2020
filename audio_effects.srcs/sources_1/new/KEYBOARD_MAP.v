@@ -4,7 +4,7 @@ module KEYBOARD_MAP(
     input [7:0] key,
     input [3:0] clr,
     
-    //Paino feature
+    //Piano feature
     input a,b,c,d,e,f,g,
     input asharp,csharp,dsharp,fsharp,gsharp,
     
@@ -19,11 +19,11 @@ module KEYBOARD_MAP(
    
    reg playback, 
         //delay,
-        paino;
-   wire [11:0] temp_out;
+        piano;
+   wire [11:0] piano_out;
 
     //for paino
-    assign temp_out = (clr == 4'b1111) ? 0 
+    assign piano_out = (clr == 4'b1111) ? 0 
                : (key == 'h1C) ? c
                : (key == 'h1B) ? d
                : (key == 'h23) ? e 
@@ -42,23 +42,23 @@ module KEYBOARD_MAP(
         if (key == 'h16) begin //key 1 playback
             playback <= 1;
             //delay <= 0;
-            paino <= 0;
+            piano <= 0;
         end
 //        if (key == 'h1E) begin //key 2 delay
 //            playback <= 0;
 //            delay <= 1;
-//            paino <= 0;   
+//            piano <= 0;   
 //        end
         if (key == 'h26) begin //key 3 paino
             playback <= 0;
             //delay <= 0;
-            paino <= 1;    
+            piano <= 1;    
         end
     end
     
     assign final_out = playback ? playback_out //key 1
                //: delay ? delay_out //key 2
-               : paino ? temp_out //key 3
+               : piano ? piano_out //key 3
                : 0;
     
 endmodule
