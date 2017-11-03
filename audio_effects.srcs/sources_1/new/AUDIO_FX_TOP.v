@@ -20,6 +20,9 @@ module AUDIO_FX_TOP(
     //reset,record,playback buttons
     input btn1,btn2,btn3,btn4,btn5,
     
+    //Toggle delay time
+    input [1:0]TOGGLE_DELAY_TIME,
+    
     //SSDisplay switch
     input TOGGLE_SSDISP,
     
@@ -140,6 +143,7 @@ module AUDIO_FX_TOP(
       SINGLE_PULSE_DFF btnE(clk_16, btn3, pulseE);
       SINGLE_PULSE_DFF btnF(clk_16, btn4, pulseF);
       SINGLE_PULSE_DFF btnG(clk_16, btn5, pulseG);
+      
      //////////////////////////////////////////////////////////////////////////////////
      //SPI Module: Converting serial data into a 12-bit parallel register
      //Do not change the codes in this area
@@ -153,20 +157,27 @@ module AUDIO_FX_TOP(
       wire [11:0] playback_out;
       reg [11:0] delay_mic; //delay sound from mic for SSDisp
       
+      /////////////////////////////////////////////////////////////////////////////////////////////////////
+      ///Delay module
+      wire clk_delay_1000ms;
+      wire clk_delay_750ms;
+      wire clk_delay_500ms;
+      wire clk_delay_250ms;
+      wire clk_delay_final;
       
-      always @ (posedge clk_3) begin
-        delay_mic <= MIC_in;
-      end
+      FLEXIBLE_CLK_DIVIDER cd1000(CLK, 5000, clk_delay_1000ms);
+      FLEXIBLE_CLK_DIVIDER cd750(CLK, 6667, clk_delay_750ms);
+      FLEXIBLE_CLK_DIVIDER cd500(CLK, 10000, clk_delay_500ms);
+      FLEXIBLE_CLK_DIVIDER cd250(CLK, 20000, clk_delay_250ms);
       
-      //wire clk_delay_1000ms;
-      //wire clk_delay_750ms;
-      //wire clk_delay_500ms;
-      //wire clk_delay_250ms;
-      //FLEXIBLE_CLK_DIVIDER cd1000(CLK, 5000, clk_delay_1000ms);
-      //
-      //init delay with 1 second
-      //DELAY_INPUT delay250MS(cdl, MIC_in, delay_out);
-      ///////////////////////////
+      assign clk_delay_final = (TOGGLE_DELAY_TIME == 2'b11) ? clk_delay_1000ms
+                             : (TOGGLE_DELAY_TIME == 2'b10) ? clk_delay_750ms
+                             : (TOGGLE_DELAY_TIME == 2'b01) ? clk_delay_500ms
+                             : (TOGGLE_DELAY_TIME == 2'b00) ? clk_delay_250ms
+                             : 0; 
+      //init delay
+      //DELAY_INPUT delay250MS(clk_delay_final, MIC_in, delay_out);
+      /////////////////////////////////////////////////////////////////////////////////////////////////////
       
       
       //playback
@@ -181,9 +192,12 @@ module AUDIO_FX_TOP(
       end      
       
       
-      
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       ///Seven segment display module
+      always @ (posedge clk_3) begin
+        delay_mic <= MIC_in;
+      end
+      
       SSegDisp display(delay_mic, clk_700, pulseC, pulseD, pulseE, pulseF, pulseG, TOGGLE_SSDISP, seg, an);
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       
@@ -199,11 +213,11 @@ module AUDIO_FX_TOP(
         clk_1865, clk_1109, clk_1245, clk_1480, clk_1661, //A#,C#,D#,F#,G#
         keyboard_note_out
       );
-      assign led = keyout[15:0]; //checker, uncomment when not needed
+      //assign led = keyout[15:0]; //checker, uncomment when not needed
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       
       
-      //volume_indicator volume_led(clk_700, MIC_in, led);
+      volume_indicator volume_led(clk_700, MIC_in, led);
       assign speaker_out = (TOGGLE_PIANO)? keyboard_note_out : delay_out;
     /////////////////////////////////////////////////////////////////////////////////////
     //DAC Module: Digital-to-Analog Conversion

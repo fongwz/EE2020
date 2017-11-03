@@ -98,6 +98,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/volume_indicator.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/SSegDisp.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -187,14 +194,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/volume_indicator.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/audio_effects/archive_project_summary.txt">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../EE2020 EE2026 AY1718 SEM 1/Project Dev/jieyi_6oct/audio_effects/audio_effects/archive_project_summary.txt"/>
@@ -248,6 +247,22 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0.xml"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/hello_data.coe"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0_sim_netlist.vhdl"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="synth/dist_mem_gen_0.vhd"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0_sim_netlist.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0_stub.vhdl"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0_stub.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="sim/dist_mem_gen_0.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0.veo"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0.mif"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="dist_mem_gen_0.vho"/>
+        <CompFileExtendedInfo CompFileName="dist_mem_gen_0.xci" FileRelPathName="doc/dist_mem_gen_v8_0_changelog.txt"/>
       </File>
       <Config>
         <Option Name="TopModule" Val="dist_mem_gen_0"/>

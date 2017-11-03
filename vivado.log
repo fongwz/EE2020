@@ -257,3 +257,40 @@ WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Cha
 Resolution: 
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
 2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Thu Nov 02 21:08:21 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Nov 02 21:09:30 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
+[Thu Nov 02 21:09:30 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Thu Nov 02 21:59:14 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
+[Thu Nov 02 21:59:14 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
+ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficients File(coefficient_file)' for Invalid COE File- Unable to open the file c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/hello_data.coe 
+. IP 'dist_mem_gen_0'
+INFO: [IP_Flow 19-3438] Customization errors found on 'dist_mem_gen_0'. Restoring to previous valid configuration.
+ERROR: [IP_Flow 19-3460] Validation failed on parameter 'Coefficients File(coefficient_file)' for Invalid COE File- Unable to open the file c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/hello_data.coe 
+. IP 'dist_mem_gen_0'
+INFO: [IP_Flow 19-3447] Customization errors found during restoring IP 'dist_mem_gen_0' to previous valid configuration.
+ERROR: [IP_Flow 19-3439] Failed to restore IP 'dist_mem_gen_0' customization to its previous valid configuration.
