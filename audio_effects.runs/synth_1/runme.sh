@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Vivado/Vivado/2016.2/ids_lite/ISE/bin/nt64;D:/Vivado/Vivado/2016.2/ids_lite/ISE/lib/nt64:D:/Vivado/Vivado/2016.2/bin
+  PATH=C:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.2/bin
 else
-  PATH=D:/Vivado/Vivado/2016.2/ids_lite/ISE/bin/nt64;D:/Vivado/Vivado/2016.2/ids_lite/ISE/lib/nt64:D:/Vivado/Vivado/2016.2/bin:$PATH
+  PATH=C:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1'
+HD_PWD='C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

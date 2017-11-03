@@ -2,15 +2,733 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+<<<<<<< HEAD
 # Start of session at: Thu Nov 02 21:59:16 2017
 # Process ID: 8424
 # Current directory: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1
+=======
+# Start of session at: Fri Nov 03 13:06:46 2017
+# Process ID: 11660
+# Current directory: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1
+>>>>>>> c2027a5c5052184b638eb29d2a066ee7f1539819
 # Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
-# Log file: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
-# Journal file: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1\vivado.jou
+# Log file: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
+# Journal file: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source AUDIO_FX_TOP.tcl -notrace
+<<<<<<< HEAD
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at D:/Vivado/Vivado/2016.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at D:/Vivado/Vivado/2016.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 ERROR: [Vivado 12-172] File or Directory 'C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/hello_data.coe' does not exist
 INFO: [Common 17-206] Exiting Vivado at Thu Nov 02 21:59:22 2017...
+=======
+Command: synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10580 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 272.199 ; gain = 65.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'CLK_20K' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_20K.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLK_20K' (1#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_20K.v:23]
+INFO: [Synth 8-638] synthesizing module 'CLK_50M' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_50M.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLK_50M' (2#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_50M.v:23]
+INFO: [Synth 8-638] synthesizing module 'FLEXIBLE_CLK_DIVIDER' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/FLEXIBLE_CLK_DIVIDER.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/FLEXIBLE_CLK_DIVIDER.v:30]
+INFO: [Synth 8-638] synthesizing module 'TARGET_FREQ_CALC' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/TARGET_FREQ_CALC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'TARGET_FREQ_CALC' (3#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/TARGET_FREQ_CALC.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/FLEXIBLE_CLK_DIVIDER.v:31]
+INFO: [Synth 8-638] synthesizing module 'CLK_VAR' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_VAR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLK_VAR' (4#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_VAR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FLEXIBLE_CLK_DIVIDER' (5#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/FLEXIBLE_CLK_DIVIDER.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'desired_freq' does not match port width (32) of module 'FLEXIBLE_CLK_DIVIDER' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:133]
+INFO: [Synth 8-638] synthesizing module 'SINGLE_PULSE_DFF' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SINGLE_PULSE_DFF.v:23]
+INFO: [Synth 8-638] synthesizing module 'my_dff' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'my_dff' (6#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SINGLE_PULSE_DFF' (7#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SINGLE_PULSE_DFF.v:23]
+INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (8#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (9#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (12) of port connection 'spo' does not match port width (13) of module 'dist_mem_gen_0' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:175]
+INFO: [Synth 8-638] synthesizing module 'SSegDisp' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SSegDisp.v:5]
+INFO: [Synth 8-638] synthesizing module 'BINtoINT' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/BINtoINT.v:5]
+INFO: [Synth 8-256] done synthesizing module 'BINtoINT' (10#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/BINtoINT.v:5]
+INFO: [Synth 8-638] synthesizing module 'INTtoSEG' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/INTtoSEG.v:4]
+INFO: [Synth 8-256] done synthesizing module 'INTtoSEG' (11#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/INTtoSEG.v:4]
+INFO: [Synth 8-638] synthesizing module 'Sev_Seg' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/Sev_Seg.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Sev_Seg' (12#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/Sev_Seg.v:4]
+INFO: [Synth 8-256] done synthesizing module 'SSegDisp' (13#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SSegDisp.v:5]
+INFO: [Synth 8-638] synthesizing module 'USB_KEYBOARD' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/top.v:26]
+INFO: [Synth 8-638] synthesizing module 'PS2Receiver' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/debouncer.v:23]
+	Parameter COUNT_MAX bound to: 19 - type: integer 
+	Parameter COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (14#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/PS2Receiver.v:55]
+INFO: [Synth 8-256] done synthesizing module 'PS2Receiver' (15#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/PS2Receiver.v:23]
+INFO: [Synth 8-256] done synthesizing module 'USB_KEYBOARD' (16#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/top.v:26]
+INFO: [Synth 8-638] synthesizing module 'KEYBOARD_MAP' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:3]
+INFO: [Synth 8-256] done synthesizing module 'KEYBOARD_MAP' (17#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'final_out' does not match port width (12) of module 'KEYBOARD_MAP' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:202]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (18#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+WARNING: [Synth 8-3848] Net delay_out in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:153]
+WARNING: [Synth 8-3848] Net led_frequency in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:133]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (19#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 309.516 ; gain = 102.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin clk20:desired_freq[0] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:133]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 309.516 ; gain = 102.449
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'hello' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:175]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
+Finished Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
+Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 602.156 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CLK20K0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CLK50M0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CLKVAR0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "seg_piano3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_piano3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "an" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "O" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "playback" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "playback" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'piano_reg' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'playback_reg' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:43]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                shiftout |                               01 |                               01
+                syncdata |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |FLEXIBLE_CLK_DIVIDER |          16|      3864|
+|2     |AUDIO_FX_TOP__GC0    |           1|      4850|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 18    
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 36    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	  12 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AUDIO_FX_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module TARGET_FREQ_CALC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module CLK_VAR 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module CLK_20K 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module CLK_50M 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module my_dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module my_dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SPI 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module INTtoSEG__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module INTtoSEG__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module INTtoSEG__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module INTtoSEG 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module Sev_Seg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module debouncer__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PS2Receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+Module USB_KEYBOARD 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module KEYBOARD_MAP 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module DA2RefComp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "nolabel_line31/CLKVAR0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk20k/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk20k/CLK20K0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk50m/COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk50m/CLK50M0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "map/playback" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "map/playback" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 602.156 ; gain = 395.090
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |FLEXIBLE_CLK_DIVIDER |          16|      3864|
+|2     |AUDIO_FX_TOP__GC0    |           1|      4835|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[0]' (FDE) to 'i_0/keyboard/uut/keycode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[1]' (FDE) to 'i_0/keyboard/uut/keycode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[2]' (FDE) to 'i_0/keyboard/uut/keycode_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[3]' (FDE) to 'i_0/keyboard/uut/keycode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[4]' (FDE) to 'i_0/keyboard/uut/keycode_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[5]' (FDE) to 'i_0/keyboard/uut/keycode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[6]' (FDE) to 'i_0/keyboard/uut/keycode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[7]' (FDE) to 'i_0/keyboard/uut/keycode_reg[7]'
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 602.156 ; gain = 395.090
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |FLEXIBLE_CLK_DIVIDER     |           1|       101|
+|2     |AUDIO_FX_TOP__GC0        |           1|      1596|
+|3     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
+|4     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
+|5     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
+|6     |FLEXIBLE_CLK_DIVIDER__4  |           1|       101|
+|7     |FLEXIBLE_CLK_DIVIDER__5  |           1|       100|
+|8     |FLEXIBLE_CLK_DIVIDER__6  |           1|       100|
+|9     |FLEXIBLE_CLK_DIVIDER__7  |           1|       102|
+|10    |FLEXIBLE_CLK_DIVIDER__8  |           1|       101|
+|11    |FLEXIBLE_CLK_DIVIDER__9  |           1|       101|
+|12    |FLEXIBLE_CLK_DIVIDER__10 |           1|        99|
+|13    |FLEXIBLE_CLK_DIVIDER__11 |           1|       103|
+|14    |FLEXIBLE_CLK_DIVIDER__12 |           1|       102|
+|15    |FLEXIBLE_CLK_DIVIDER__13 |           1|       103|
+|16    |FLEXIBLE_CLK_DIVIDER__14 |           1|       100|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 602.156 ; gain = 395.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |FLEXIBLE_CLK_DIVIDER     |           1|       101|
+|2     |AUDIO_FX_TOP__GC0        |           1|      1596|
+|3     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
+|4     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
+|5     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
+|6     |FLEXIBLE_CLK_DIVIDER__4  |           1|       101|
+|7     |FLEXIBLE_CLK_DIVIDER__5  |           1|       100|
+|8     |FLEXIBLE_CLK_DIVIDER__6  |           1|       100|
+|9     |FLEXIBLE_CLK_DIVIDER__7  |           1|       102|
+|10    |FLEXIBLE_CLK_DIVIDER__8  |           1|       101|
+|11    |FLEXIBLE_CLK_DIVIDER__9  |           1|       101|
+|12    |FLEXIBLE_CLK_DIVIDER__10 |           1|        99|
+|13    |FLEXIBLE_CLK_DIVIDER__11 |           1|       103|
+|14    |FLEXIBLE_CLK_DIVIDER__12 |           1|       102|
+|15    |FLEXIBLE_CLK_DIVIDER__13 |           1|       103|
+|16    |FLEXIBLE_CLK_DIVIDER__14 |           1|       100|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[11]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[10]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[9]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[8]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[7]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[6]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[5]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[4]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[3]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[2]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[1]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[0]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[15]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[14]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[13]) is unused and will be removed from module AUDIO_FX_TOP.
+WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[12]) is unused and will be removed from module AUDIO_FX_TOP.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/THOUSAND/SEG_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (display/THOUSAND/SEG_reg[5]) is unused and will be removed from module AUDIO_FX_TOP.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |BUFG           |     4|
+|3     |CARRY4         |   209|
+|4     |LUT1           |   585|
+|5     |LUT2           |    82|
+|6     |LUT3           |   198|
+|7     |LUT4           |    44|
+|8     |LUT5           |    43|
+|9     |LUT6           |   182|
+|10    |FDRE           |   741|
+|11    |FDSE           |     3|
+|12    |LDC            |     1|
+|13    |LDP            |     1|
+|14    |IBUF           |    12|
+|15    |OBUF           |    33|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-------------------+------------------------+------+
+|      |Instance           |Module                  |Cells |
++------+-------------------+------------------------+------+
+|1     |top                |                        |  2151|
+|2     |  btnC             |SINGLE_PULSE_DFF        |     2|
+|3     |    dff1           |my_dff_43               |     1|
+|4     |    dff2           |my_dff_44               |     1|
+|5     |  btnD             |SINGLE_PULSE_DFF_0      |     3|
+|6     |    dff1           |my_dff_41               |     2|
+|7     |    dff2           |my_dff_42               |     1|
+|8     |  btnE             |SINGLE_PULSE_DFF_1      |     5|
+|9     |    dff1           |my_dff_39               |     1|
+|10    |    dff2           |my_dff_40               |     4|
+|11    |  btnF             |SINGLE_PULSE_DFF_2      |     4|
+|12    |    dff1           |my_dff_37               |     1|
+|13    |    dff2           |my_dff_38               |     3|
+|14    |  btnG             |SINGLE_PULSE_DFF_3      |     2|
+|15    |    dff1           |my_dff                  |     1|
+|16    |    dff2           |my_dff_36               |     1|
+|17    |  clk1047          |FLEXIBLE_CLK_DIVIDER    |    94|
+|18    |    nolabel_line31 |CLK_VAR_35              |    94|
+|19    |  clk1109          |FLEXIBLE_CLK_DIVIDER_4  |    94|
+|20    |    nolabel_line31 |CLK_VAR_34              |    94|
+|21    |  clk1175          |FLEXIBLE_CLK_DIVIDER_5  |    94|
+|22    |    nolabel_line31 |CLK_VAR_33              |    94|
+|23    |  clk1245          |FLEXIBLE_CLK_DIVIDER_6  |    94|
+|24    |    nolabel_line31 |CLK_VAR_32              |    94|
+|25    |  clk1319          |FLEXIBLE_CLK_DIVIDER_7  |    94|
+|26    |    nolabel_line31 |CLK_VAR_31              |    94|
+|27    |  clk1397          |FLEXIBLE_CLK_DIVIDER_8  |    94|
+|28    |    nolabel_line31 |CLK_VAR_30              |    94|
+|29    |  clk1480          |FLEXIBLE_CLK_DIVIDER_9  |    94|
+|30    |    nolabel_line31 |CLK_VAR_29              |    94|
+|31    |  clk1568          |FLEXIBLE_CLK_DIVIDER_10 |    94|
+|32    |    nolabel_line31 |CLK_VAR_28              |    94|
+|33    |  clk16            |FLEXIBLE_CLK_DIVIDER_11 |    94|
+|34    |    nolabel_line31 |CLK_VAR_27              |    94|
+|35    |  clk1661          |FLEXIBLE_CLK_DIVIDER_12 |    94|
+|36    |    nolabel_line31 |CLK_VAR_26              |    94|
+|37    |  clk1760          |FLEXIBLE_CLK_DIVIDER_13 |    94|
+|38    |    nolabel_line31 |CLK_VAR_25              |    94|
+|39    |  clk1865          |FLEXIBLE_CLK_DIVIDER_14 |    94|
+|40    |    nolabel_line31 |CLK_VAR_24              |    94|
+|41    |  clk1975          |FLEXIBLE_CLK_DIVIDER_15 |    94|
+|42    |    nolabel_line31 |CLK_VAR_23              |    94|
+|43    |  clk20k           |CLK_20K                 |    83|
+|44    |  clk3             |FLEXIBLE_CLK_DIVIDER_16 |    94|
+|45    |    nolabel_line31 |CLK_VAR_22              |    94|
+|46    |  clk50m           |CLK_50M                 |    83|
+|47    |  clk700           |FLEXIBLE_CLK_DIVIDER_17 |    94|
+|48    |    nolabel_line31 |CLK_VAR                 |    94|
+|49    |  display          |SSegDisp                |   236|
+|50    |    BTI            |BINtoINT                |   143|
+|51    |    DisplayOut     |Sev_Seg                 |    40|
+|52    |    HUNDREDS       |INTtoSEG                |    15|
+|53    |    ONES           |INTtoSEG_19             |    25|
+|54    |    TENS           |INTtoSEG_20             |     7|
+|55    |    THOUSAND       |INTtoSEG_21             |     6|
+|56    |  keyboard         |USB_KEYBOARD            |    92|
+|57    |    uut            |PS2Receiver             |    89|
+|58    |      db_clk       |debouncer               |    16|
+|59    |      db_data      |debouncer_18            |    24|
+|60    |  map              |KEYBOARD_MAP            |     3|
+|61    |  u1               |SPI                     |    77|
+|62    |  u2               |DA2RefComp              |    47|
++------+-------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 608.785 ; gain = 109.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 223 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 25 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 1 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 608.785 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 03 13:07:26 2017...
+>>>>>>> c2027a5c5052184b638eb29d2a066ee7f1539819
