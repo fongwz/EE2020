@@ -38,7 +38,7 @@ module KEYBOARD_MAP(
                : (key == 'h3C) ? asharp
                : 0;
     
-    always @ (*) begin
+    always @ (key == 'h16 | key == 'h26) begin
         if (key == 'h16) begin //key 1 playback
             playback <= 1;
             //delay <= 0;
@@ -49,7 +49,7 @@ module KEYBOARD_MAP(
 //            delay <= 1;
 //            piano <= 0;   
 //        end
-        if (key == 'h26) begin //key 3 paino
+        if (key == 'h26) begin //key 3 piano
             playback <= 0;
             //delay <= 0;
             piano <= 1;    

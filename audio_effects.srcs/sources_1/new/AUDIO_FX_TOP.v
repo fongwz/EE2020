@@ -191,7 +191,7 @@ module AUDIO_FX_TOP(
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       ///Keyboard module
       wire [15:0] keyout;
-      wire [11:0] keyboard_note_out;
+      wire [11:0] final_out;
       USB_KEYBOARD keyboard(CLK, PS2Data, PS2Clk, keyout);
       KEYBOARD_MAP map(
         keyout[7:0], keyout[15:12], 

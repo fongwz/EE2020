@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Nov 03 13:06:46 2017
-# Process ID: 11660
+# Start of session at: Fri Nov 03 17:29:44 2017
+# Process ID: 824
 # Current directory: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1
 # Command line: vivado.exe -log AUDIO_FX_TOP.vds -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
 # Log file: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/AUDIO_FX_TOP.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10580 
+INFO: Helper process launched with PID 2496 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 272.199 ; gain = 65.133
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 272.672 ; gain = 65.535
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 INFO: [Synth 8-638] synthesizing module 'CLK_20K' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_20K.v:23]
@@ -39,8 +39,8 @@ INFO: [Synth 8-256] done synthesizing module 'my_dff' (6#1) [C:/Users/vik/Deskto
 INFO: [Synth 8-256] done synthesizing module 'SINGLE_PULSE_DFF' (7#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SINGLE_PULSE_DFF.v:23]
 INFO: [Synth 8-638] synthesizing module 'SPI' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SPI.v:20]
 INFO: [Synth 8-256] done synthesizing module 'SPI' (8#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SPI.v:20]
-INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/realtime/dist_mem_gen_0_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (9#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-824-LAPTOP-BIJJ0SCS/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (9#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-824-LAPTOP-BIJJ0SCS/realtime/dist_mem_gen_0_stub.v:6]
 WARNING: [Synth 8-689] width (12) of port connection 'spo' does not match port width (13) of module 'dist_mem_gen_0' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:175]
 INFO: [Synth 8-638] synthesizing module 'SSegDisp' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/SSegDisp.v:5]
 INFO: [Synth 8-638] synthesizing module 'BINtoINT' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/BINtoINT.v:5]
@@ -60,15 +60,15 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/vik/
 INFO: [Synth 8-256] done synthesizing module 'PS2Receiver' (15#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/PS2Receiver.v:23]
 INFO: [Synth 8-256] done synthesizing module 'USB_KEYBOARD' (16#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/top.v:26]
 INFO: [Synth 8-638] synthesizing module 'KEYBOARD_MAP' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:3]
+WARNING: [Synth 8-567] referenced signal 'key' should be on the sensitivity list [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:41]
 INFO: [Synth 8-256] done synthesizing module 'KEYBOARD_MAP' (17#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v:3]
-WARNING: [Synth 8-689] width (1) of port connection 'final_out' does not match port width (12) of module 'KEYBOARD_MAP' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:202]
 INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
 INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (18#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
 WARNING: [Synth 8-3848] Net delay_out in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:153]
 WARNING: [Synth 8-3848] Net led_frequency in module/entity AUDIO_FX_TOP does not have driver. [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:133]
 INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (19#1) [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 309.516 ; gain = 102.449
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 310.055 ; gain = 102.918
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -91,7 +91,7 @@ WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [C:/Users/v
 WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
 WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:213]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 309.516 ; gain = 102.449
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 310.055 ; gain = 102.918
 ---------------------------------------------------------------------------------
 WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'hello' [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:175]
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
@@ -99,8 +99,8 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
-Finished Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-11660-LAPTOP-BIJJ0SCS/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
+Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-824-LAPTOP-BIJJ0SCS/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
+Finished Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/synth_1/.Xil/Vivado-824-LAPTOP-BIJJ0SCS/dcp/dist_mem_gen_0_in_context.xdc] for cell 'hello'
 Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 Finished Parsing XDC File [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
@@ -110,22 +110,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 602.156 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 601.930 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "COUNT0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "CLK20K0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -155,7 +155,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'playback_reg' [C:/Users/vik
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -163,7 +163,7 @@ Report RTL Partitions:
 |      |RTL Partition        |Replication |Instances |
 +------+---------------------+------------+----------+
 |1     |FLEXIBLE_CLK_DIVIDER |          16|      3864|
-|2     |AUDIO_FX_TOP__GC0    |           1|      4850|
+|2     |AUDIO_FX_TOP__GC0    |           1|      4872|
 +------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -411,7 +411,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 602.156 ; gain = 395.090
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -423,16 +423,16 @@ INFO: [Synth 8-5545] ROM "clk50m/CLK50M0" won't be mapped to RAM because address
 INFO: [Synth 8-5546] ROM "map/playback" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "map/playback" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 601.930 ; gain = 394.793
 
 Report RTL Partitions: 
 +------+---------------------+------------+----------+
 |      |RTL Partition        |Replication |Instances |
 +------+---------------------+------------+----------+
 |1     |FLEXIBLE_CLK_DIVIDER |          16|      3864|
-|2     |AUDIO_FX_TOP__GC0    |           1|      4835|
+|2     |AUDIO_FX_TOP__GC0    |           1|      4879|
 +------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Area Optimization
@@ -446,16 +446,16 @@ INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[5]' (FDE) t
 INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[6]' (FDE) to 'i_0/keyboard/uut/keycode_reg[6]'
 INFO: [Synth 8-3886] merging instance 'i_0/keyboard/uut/dataprev_reg[7]' (FDE) to 'i_0/keyboard/uut/keycode_reg[7]'
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 601.930 ; gain = 394.793
 
 Report RTL Partitions: 
 +------+-------------------------+------------+----------+
 |      |RTL Partition            |Replication |Instances |
 +------+-------------------------+------------+----------+
 |1     |FLEXIBLE_CLK_DIVIDER     |           1|       101|
-|2     |AUDIO_FX_TOP__GC0        |           1|      1596|
+|2     |AUDIO_FX_TOP__GC0        |           1|      1607|
 |3     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
 |4     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
 |5     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
@@ -478,10 +478,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 602.156 ; gain = 395.090
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 601.930 ; gain = 394.793
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -489,7 +489,7 @@ Report RTL Partitions:
 |      |RTL Partition            |Replication |Instances |
 +------+-------------------------+------------+----------+
 |1     |FLEXIBLE_CLK_DIVIDER     |           1|       101|
-|2     |AUDIO_FX_TOP__GC0        |           1|      1596|
+|2     |AUDIO_FX_TOP__GC0        |           1|      1607|
 |3     |FLEXIBLE_CLK_DIVIDER__1  |           1|       102|
 |4     |FLEXIBLE_CLK_DIVIDER__2  |           1|       100|
 |5     |FLEXIBLE_CLK_DIVIDER__3  |           1|       101|
@@ -527,16 +527,16 @@ WARNING: [Synth 8-3332] Sequential element (u2/temp2_reg[12]) is unused and will
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display/THOUSAND/SEG_reg[5] )
 WARNING: [Synth 8-3332] Sequential element (display/THOUSAND/SEG_reg[5]) is unused and will be removed from module AUDIO_FX_TOP.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 608.270 ; gain = 401.133
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -553,7 +553,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -566,7 +566,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -578,25 +578,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -618,10 +618,10 @@ Report Cell Usage:
 |3     |CARRY4         |   209|
 |4     |LUT1           |   585|
 |5     |LUT2           |    82|
-|6     |LUT3           |   198|
+|6     |LUT3           |   187|
 |7     |LUT4           |    44|
 |8     |LUT5           |    43|
-|9     |LUT6           |   182|
+|9     |LUT6           |   193|
 |10    |FDRE           |   741|
 |11    |FDSE           |     3|
 |12    |LDC            |     1|
@@ -689,20 +689,20 @@ Report Instance Areas:
 |53    |    ONES           |INTtoSEG_19             |    25|
 |54    |    TENS           |INTtoSEG_20             |     7|
 |55    |    THOUSAND       |INTtoSEG_21             |     6|
-|56    |  keyboard         |USB_KEYBOARD            |    92|
-|57    |    uut            |PS2Receiver             |    89|
+|56    |  keyboard         |USB_KEYBOARD            |    93|
+|57    |    uut            |PS2Receiver             |    90|
 |58    |      db_clk       |debouncer               |    16|
 |59    |      db_data      |debouncer_18            |    24|
-|60    |  map              |KEYBOARD_MAP            |     3|
+|60    |  map              |KEYBOARD_MAP            |     2|
 |61    |  u1               |SPI                     |    77|
 |62    |  u2               |DA2RefComp              |    47|
 +------+-------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 608.270 ; gain = 401.133
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 608.785 ; gain = 109.078
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.785 ; gain = 401.719
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 608.270 ; gain = 109.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 608.270 ; gain = 401.133
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 223 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -716,6 +716,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 83 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 608.785 ; gain = 401.719
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 608.785 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 03 13:07:26 2017...
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 608.270 ; gain = 401.133
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.025 . Memory (MB): peak = 608.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 03 17:30:23 2017...
