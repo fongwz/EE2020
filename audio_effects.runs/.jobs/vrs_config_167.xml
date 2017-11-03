@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-<<<<<<< HEAD
-	<Run Id="impl_1" LaunchDir="C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="write_bitstream" ToStepId="write_bitstream"/>
-=======
-	<Run Id="dist_mem_gen_0_synth_1" LaunchDir="C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/dist_mem_gen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
->>>>>>> c2027a5c5052184b638eb29d2a066ee7f1539819
-</Runs>
-

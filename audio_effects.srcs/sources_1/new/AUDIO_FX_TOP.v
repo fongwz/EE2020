@@ -174,10 +174,11 @@ module AUDIO_FX_TOP(
       assign clk_delay_final = (TOGGLE_DELAY_TIME == 2'b11) ? clk_delay_1000ms
                              : (TOGGLE_DELAY_TIME == 2'b10) ? clk_delay_750ms
                              : (TOGGLE_DELAY_TIME == 2'b01) ? clk_delay_500ms
-                             : (TOGGLE_DELAY_TIME == 2'b00) ? clk_delay_250ms
-                             : 0; 
+                             : clk_delay_250ms;
+                             
+                         
       //init delay
-      //DELAY_INPUT delay250MS(clk_delay_final, MIC_in, delay_out);
+      DELAY_INPUT delay250MS(clk_delay_final, MIC_in, delay_out);
       /////////////////////////////////////////////////////////////////////////////////////////////////////
       
       
@@ -205,27 +206,26 @@ module AUDIO_FX_TOP(
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       ///Keyboard module
       wire [15:0] keyout;
-      wire [11:0] keyboard_note_out;
+      wire [11:0] final_out;
       USB_KEYBOARD keyboard(CLK, PS2Data, PS2Clk, keyout);
       KEYBOARD_MAP map(
         keyout[7:0], keyout[15:12], 
         clk_1760, clk_1975, clk_1047, clk_1175, clk_1319, clk_1397, clk_1568, //A,B,C,D,E,F,G
         clk_1865, clk_1109, clk_1245, clk_1480, clk_1661, //A#,C#,D#,F#,G#
         playback_out, //playback
-        //delay_out,  //delay
+        delay_out,  //delay
         final_out
       );
       //assign led = keyout[15:0]; //checker, uncomment when not needed
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       
       
-<<<<<<< HEAD
+
+      
+
       volume_indicator volume_led(clk_700, MIC_in, led);
-      assign speaker_out = (TOGGLE_PIANO)? keyboard_note_out : delay_out;
-=======
-      //volume_indicator volume_led(clk_700, MIC_in, led);
-      assign speaker_out = (TOGGLE_PIANO)? final_out : delay_out;
->>>>>>> c2027a5c5052184b638eb29d2a066ee7f1539819
+      assign speaker_out = (TOGGLE_PIANO)? final_out : 0;
+
     /////////////////////////////////////////////////////////////////////////////////////
     //DAC Module: Digital-to-Analog Conversion
     //Do not change the codes in this area        

@@ -12,17 +12,15 @@ module KEYBOARD_MAP(
     input [11:0] playback_out,
     
     //Delay feature
-    //input [11:0] delay_out,
+    input [11:0] delay_out,
     
     output [11:0] final_out
     );
    
-   reg playback, 
-        //delay,
-        piano;
+   reg playback, delay, piano;
    wire [11:0] piano_out;
 
-    //for paino
+    //for piano
     assign piano_out = (clr == 4'b1111) ? 0 
                : (key == 'h1C) ? c
                : (key == 'h1B) ? d
@@ -38,27 +36,26 @@ module KEYBOARD_MAP(
                : (key == 'h3C) ? asharp
                : 0;
     
-    always @ (*) begin
+    always @ (key) begin
         if (key == 'h16) begin //key 1 playback
             playback <= 1;
-            //delay <= 0;
+            delay <= 0;
             piano <= 0;
         end
-//        if (key == 'h1E) begin //key 2 delay
-//            playback <= 0;
-//            delay <= 1;
-//            piano <= 0;   
-//        end
-        if (key == 'h26) begin //key 3 paino
+        else if (key == 'h1E) begin //key 2 delay
             playback <= 0;
-            //delay <= 0;
+            delay <= 1;
+            piano <= 0;   
+        end
+        else if (key == 'h26) begin //key 3 piano
+            playback <= 0;
+            delay <= 0;
             piano <= 1;    
         end
     end
     
     assign final_out = playback ? playback_out //key 1
-               //: delay ? delay_out //key 2
-               : piano ? piano_out //key 3
-               : 0;
+               : delay ? delay_out //key 2
+               : piano_out; //key 3
     
 endmodule

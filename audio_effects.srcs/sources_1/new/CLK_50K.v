@@ -29,5 +29,5 @@ module CLK_50M(
     
     always @ (posedge CLK) begin
         COUNT <= (COUNT == 0) ? 0 : COUNT + 1;
-        CLK
+    end
 endmodule

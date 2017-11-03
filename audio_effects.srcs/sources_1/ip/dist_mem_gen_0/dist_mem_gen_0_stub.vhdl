@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
--- Date        : Thu Nov 02 21:12:33 2017
--- Host        : LAPTOP-BIJJ0SCS running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.vhdl
+-- Date        : Fri Nov 03 17:28:52 2017
+-- Host        : DESKTOP-1HN8OHR running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub {C:/Users/Wei
+--               Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.vhdl}
 -- Design      : dist_mem_gen_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

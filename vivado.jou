@@ -2,120 +2,40 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Nov 03 10:58:24 2017
-# Process ID: 5216
-# Current directory: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7852 C:\Users\vik\Desktop\EE2020_Project_Template.xpr\EE2020\audio_effects.xpr
-# Log file: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/vivado.log
-# Journal file: C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020\vivado.jou
+# Start of session at: Fri Nov 03 17:19:41 2017
+# Process ID: 5164
+# Current directory: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13984 C:\Users\Wei Zheng\Desktop\NUS\Y2S1\EE2020\Project\audio_effects\audio_effects.xpr
+# Log file: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/vivado.log
+# Journal file: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.xpr
+open_project {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.xpr}
 update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 current_hw_device [lindex [get_hw_devices] 0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-update_compile_order -fileset sources_1
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-disconnect_hw_server localhost:3121
-disconnect_hw_server localhost:3121
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183714192A]
-set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183714192A]
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-disconnect_hw_server localhost:3121
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
@@ -123,8 +43,27 @@ set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs impl_1 -jobs 4
+launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

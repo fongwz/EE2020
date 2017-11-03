@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Fri Nov 03 13:08:30 2017
-| Host             : LAPTOP-BIJJ0SCS running 64-bit major release  (build 9200)
+| Date             : Fri Nov 03 19:21:38 2017
+| Host             : DESKTOP-1HN8OHR running 64-bit major release  (build 9200)
 | Command          : report_power -file AUDIO_FX_TOP_power_routed.rpt -pb AUDIO_FX_TOP_power_summary_routed.pb -rpx AUDIO_FX_TOP_power_routed.rpx
 | Design           : AUDIO_FX_TOP
 | Device           : xc7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.087 |
-| Dynamic (W)              | 0.015 |
+| Total On-Chip Power (W)  | 0.089 |
+| Dynamic (W)              | 0.017 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.6  |
@@ -46,22 +46,23 @@ Table of Contents
 1.1 On-Chip Components
 ----------------------
 
-+----------------+-----------+----------+-----------+-----------------+
-| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
-+----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     1832 |       --- |             --- |
-|   LUT as Logic |     0.001 |      675 |     20800 |            3.25 |
-|   CARRY4       |    <0.001 |      209 |      8150 |            2.56 |
-|   Register     |    <0.001 |      746 |     41600 |            1.79 |
-|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
-|   Others       |     0.000 |       83 |       --- |             --- |
-|   F7/F8 Muxes  |     0.000 |       69 |     32600 |            0.21 |
-| Signals        |     0.003 |     1261 |       --- |             --- |
-| I/O            |     0.007 |       45 |       106 |           42.45 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.087 |          |           |                 |
-+----------------+-----------+----------+-----------+-----------------+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.005 |        3 |       --- |             --- |
+| Slice Logic             |     0.002 |     5857 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1981 |     20800 |            9.52 |
+|   CARRY4                |    <0.001 |      253 |      8150 |            3.10 |
+|   Register              |    <0.001 |      938 |     41600 |            2.25 |
+|   BUFG                  |    <0.001 |        3 |        32 |            9.38 |
+|   Others                |     0.000 |       97 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |     1896 |      9600 |           19.75 |
+|   F7/F8 Muxes           |     0.000 |      626 |     32600 |            1.92 |
+| Signals                 |     0.003 |     2648 |       --- |             --- |
+| I/O                     |     0.006 |       47 |       106 |           44.34 |
+| Static Power            |     0.072 |          |           |                 |
+| Total                   |     0.089 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
 
 
 1.2 Power Supply Summary
@@ -70,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.018 |       0.009 |      0.010 |
+| Vccint    |       1.000 |     0.021 |       0.011 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -93,7 +94,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -139,7 +140,7 @@ Table of Contents
 +--------------------+-----------+
 | Name               | Power (W) |
 +--------------------+-----------+
-| AUDIO_FX_TOP       |     0.015 |
+| AUDIO_FX_TOP       |     0.017 |
 |   btnC             |     0.000 |
 |     dff1           |     0.000 |
 |     dff2           |     0.000 |
@@ -155,6 +156,14 @@ Table of Contents
 |   btnG             |     0.000 |
 |     dff1           |     0.000 |
 |     dff2           |     0.000 |
+|   cd1000           |    <0.001 |
+|     nolabel_line31 |    <0.001 |
+|   cd250            |    <0.001 |
+|     nolabel_line31 |    <0.001 |
+|   cd500            |    <0.001 |
+|     nolabel_line31 |    <0.001 |
+|   cd750            |    <0.001 |
+|     nolabel_line31 |    <0.001 |
 |   clk1047          |    <0.001 |
 |     nolabel_line31 |    <0.001 |
 |   clk1109          |    <0.001 |
@@ -187,6 +196,7 @@ Table of Contents
 |   clk50m           |    <0.001 |
 |   clk700           |    <0.001 |
 |     nolabel_line31 |    <0.001 |
+|   delay250MS       |     0.000 |
 |   display          |    <0.001 |
 |     BTI            |     0.000 |
 |     DisplayOut     |    <0.001 |
@@ -201,8 +211,11 @@ Table of Contents
 |       db_clk       |    <0.001 |
 |       db_data      |    <0.001 |
 |   map              |    <0.001 |
+|     delay_reg      |    <0.001 |
+|     playback_reg   |    <0.001 |
 |   u1               |    <0.001 |
 |   u2               |    <0.001 |
+|   volume_led       |     0.000 |
 +--------------------+-----------+
 
 
