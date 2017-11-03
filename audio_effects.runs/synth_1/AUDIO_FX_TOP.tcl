@@ -18,6 +18,26 @@ add_files C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/hello_data.coe
 add_files -quiet c:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp
 set_property used_in_implementation false [get_files c:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp]
 read_verilog -library xil_defaultlib {
+<<<<<<< HEAD
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/debouncer.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/BINtoINT.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/INTtoSEG.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/Sev_Seg.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/TARGET_FREQ_CALC.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/my_dff.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/CLK_VAR.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/PS2Receiver.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/volume_indicator.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SSegDisp.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SPI.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/SINGLE_PULSE_DFF.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/KEYBOARD_MAP.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/FLEXIBLE_CLK_DIVIDER.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/CLK_50M.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/CLK_20K.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/top.v}
+  {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v}
+=======
   C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/debouncer.v
   C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/BINtoINT.v
   C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/INTtoSEG.v
@@ -35,6 +55,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/CLK_20K.v
   C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/top.v
   C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v
+>>>>>>> c2027a5c5052184b638eb29d2a066ee7f1539819
 }
 read_vhdl -library xil_defaultlib C:/Users/vik/Desktop/EE2020_Project_Template.xpr/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd
 foreach dcp [get_files -quiet -all *.dcp] {

@@ -437,3 +437,8 @@ dismissDialog("Program Device"); // aW:ak (cv:JFrame)
 // 'A' command handler elapsed time: 5 seconds
 dismissDialog("Program Device"); // bL:g (cv:JFrame)
 // [GUI Memory]: 98 MB (+1460kb) [00:24:37]
+// Elapsed time: 506 seconds
+selectCodeEditor("AUDIO_FX_TOP.v", 437, 264); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "KEYBOARD_MAP.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 212 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project C:/Users/vik/Desktop/EE2020_Project_Template.xpr/EE2020/audio_effects.xpr. ]", 1, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
