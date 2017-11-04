@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Fri Nov 03 19:21:08 2017
+| Date         : Sat Nov 04 13:15:28 2017
 | Host         : DESKTOP-1HN8OHR running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
 | Design       : AUDIO_FX_TOP
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    42 |
-| Unused register locations in slices containing registers |    94 |
+| Number of unique control sets                            |    40 |
+| Unused register locations in slices containing registers |    91 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             209 |          124 |
+| No           | No                    | No                     |             200 |          127 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             688 |          173 |
-| Yes          | No                    | No                     |              24 |            8 |
+| No           | Yes                   | No                     |             652 |          165 |
+| Yes          | No                    | No                     |              24 |            9 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              17 |            5 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,51 +45,49 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
-|         Clock Signal         |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
-+------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
-|  clk50m/clk                  |                                          |                                          |                1 |              1 |
-|  map/playback_reg/G0         |                                          |                                          |                1 |              1 |
-|  map/delay_reg/G0            |                                          |                                          |                1 |              1 |
-|  u2/J_DA2_Pin4_OBUF          |                                          |                                          |                1 |              2 |
-|  u2/J_DA2_Pin4_OBUF          | u2/shiftCounter[3]_i_1_n_1               | u2/temp1[15]_i_1_n_1                     |                1 |              4 |
-|  u2/J_DA2_Pin4_OBUF          | u2/temp2                                 | u2/temp1[15]_i_1_n_1                     |                1 |              4 |
-| ~keyboard/uut/db_clk/kclkf   | keyboard/cnt                             | keyboard/uut/cnt[3]_i_1_n_1              |                1 |              4 |
-|  keyboard/CLK50MHZ           | keyboard/uut/db_data/count[4]_i_2__0_n_1 | keyboard/uut/db_data/count[4]_i_1__0_n_1 |                2 |              5 |
-|  clk_700_BUFG                |                                          | display/DisplayOut/COUNT[1]_i_1_n_1      |                1 |              5 |
-| ~keyboard/uut/db_clk/kclkf   |                                          |                                          |                3 |              9 |
-|  keyboard/CLK50MHZ           |                                          |                                          |                4 |             10 |
-|  clk16/nolabel_line31/clk_16 |                                          |                                          |                3 |             10 |
-|  u2/J_DA2_Pin4_OBUF          | u2/temp2                                 |                                          |                6 |             12 |
-| ~u1/J_MIC3_Pin4_OBUF         |                                          |                                          |                4 |             12 |
-|  clk3/nolabel_line31/CLK     |                                          |                                          |                5 |             12 |
-|  keyboard/CLK50MHZ           | keyboard/uut/keycode[15]_i_1_n_1         |                                          |                2 |             12 |
-|  CLK_IBUF_BUFG               |                                          | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             12 |
-|  CLK_IBUF_BUFG               |                                          |                                          |               21 |             24 |
-|  J_MIC3_Pin1_OBUF_BUFG       |                                          |                                          |                8 |             25 |
-|  CLK_IBUF_BUFG               |                                          | clk20k/COUNT[31]_i_1__0_n_1              |                8 |             31 |
-|  CLK_IBUF_BUFG               |                                          | clk50m/CLK50M0                           |                9 |             32 |
-|  CLK_IBUF_BUFG               |                                          | cd1000/nolabel_line31/clear              |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk16/nolabel_line31/clear               |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1661/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1760/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1865/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1319/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1397/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1480/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1568/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | cd500/nolabel_line31/clear               |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk700/nolabel_line31/clear              |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1047/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1109/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1175/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk3/nolabel_line31/clear                |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | cd250/nolabel_line31/clear               |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1975/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | clk1245/nolabel_line31/clear             |                8 |             32 |
-|  CLK_IBUF_BUFG               |                                          | cd750/nolabel_line31/clear               |                8 |             32 |
-|  clk_700_BUFG                |                                          |                                          |               24 |             54 |
-|  n_0_523_BUFG                |                                          |                                          |              528 |           1944 |
-+------------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
++----------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|        Clock Signal        |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
+|  clk50m/clk                |                                          |                                          |                1 |              1 |
+|  map/delay_reg/G0          |                                          |                                          |                1 |              1 |
+|  map/playback_reg/G0       |                                          |                                          |                1 |              1 |
+|  keyboard/uut/seg_reg[5]   |                                          | keyboard/uut/seg_reg[5]_1                |                1 |              1 |
+|  u2/J_DA2_Pin4_OBUF        |                                          |                                          |                1 |              2 |
+|  u2/J_DA2_Pin4_OBUF        | u2/shiftCounter[3]_i_1_n_1               | u2/SR[0]                                 |                1 |              4 |
+|  u2/J_DA2_Pin4_OBUF        | u2/temp2                                 | u2/SR[0]                                 |                2 |              4 |
+| ~keyboard/uut/db_clk/kclkf | keyboard/cnt                             | keyboard/uut/cnt[3]_i_1_n_1              |                1 |              4 |
+|  keyboard/CLK50MHZ         | keyboard/uut/db_data/count[4]_i_2__0_n_1 | keyboard/uut/db_data/count[4]_i_1__0_n_1 |                1 |              5 |
+| ~keyboard/uut/db_clk/kclkf |                                          |                                          |                3 |              9 |
+|  keyboard/CLK50MHZ         |                                          |                                          |                4 |             10 |
+|  u2/J_DA2_Pin4_OBUF        | u2/temp2                                 |                                          |                6 |             12 |
+|  clk3/nolabel_line31/CLK   |                                          |                                          |                5 |             12 |
+| ~u1/J_MIC3_Pin4_OBUF       |                                          |                                          |                5 |             12 |
+|  keyboard/CLK50MHZ         | keyboard/uut/keycode[15]_i_1_n_1         |                                          |                3 |             12 |
+|  CLK_IBUF_BUFG             |                                          | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             12 |
+|  CLK_IBUF_BUFG             |                                          |                                          |               22 |             23 |
+|  J_MIC3_Pin1_OBUF_BUFG     |                                          |                                          |                9 |             25 |
+|  CLK_IBUF_BUFG             |                                          | clk20k/COUNT[31]_i_1__0_n_1              |                8 |             31 |
+|  CLK_IBUF_BUFG             |                                          | cd250/nolabel_line31/clear               |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | cd500/nolabel_line31/clear               |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1568/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1865/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1975/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk3/nolabel_line31/clear                |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk700/nolabel_line31/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | cd750/nolabel_line31/clear               |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1047/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1109/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1175/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1245/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1319/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1397/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1480/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk50m/CLK50M0                           |                9 |             32 |
+|  CLK_IBUF_BUFG             |                                          | cd1000/nolabel_line31/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1760/nolabel_line31/clear             |                8 |             32 |
+|  CLK_IBUF_BUFG             |                                          | clk1661/nolabel_line31/clear             |                8 |             32 |
+|  clk_700_BUFG              |                                          |                                          |               28 |             56 |
+|  n_0_496_BUFG              |                                          |                                          |              527 |           1944 |
++----------------------------+------------------------------------------+------------------------------------------+------------------+----------------+
 
 

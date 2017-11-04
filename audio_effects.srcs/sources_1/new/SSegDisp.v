@@ -5,8 +5,7 @@
 module SSegDisp(
     input [11:0] Binary,//Inupt what number you want displayed in binary
     input clk_700hz,
-    input pulseC,pulseD,pulseE,pulseF,pulseG,
-    input switch,
+    input [15:0] key,
     output [6:0] seg,   //Shows number in seven segment
     output [3:0] an     //Selects which segment to show
     );
@@ -21,6 +20,6 @@ module SSegDisp(
     INTtoSEG TENS (clk_700hz, Tens, TensSEG);                 // Converts Tens Position Integer into Equivalent 7-segment Code
     INTtoSEG ONES (clk_700hz, Ones, OnesSEG);                 // Converts Ones Position Integer into Equivalent 7-segment Code
     
-    Sev_Seg DisplayOut (clk_700hz, ThouSEG, HundSEG, TensSEG, OnesSEG, pulseC, pulseD, pulseE, pulseF, pulseG, switch, seg, an);  //Sends out the appropriate 7-segment code corrected with clock timing
+    Sev_Seg DisplayOut (clk_700hz, ThouSEG, HundSEG, TensSEG, OnesSEG, key[15:12], key[7:0], seg, an);  //Sends out the appropriate 7-segment code corrected with clock timing
       
 endmodule

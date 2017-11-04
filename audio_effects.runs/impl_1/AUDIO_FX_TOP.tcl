@@ -56,8 +56,8 @@ set rc [catch {
   set_property ip_repo_paths {{c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.cache/ip}} [current_project]
   set_property ip_output_repo {{c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.cache/ip}} [current_project]
   add_files -quiet {{C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/AUDIO_FX_TOP.dcp}}
-  add_files -quiet {{C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp}}
-  set_property netlist_only true [get_files {{C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp}}]
+  add_files -quiet {{c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp}}
+  set_property netlist_only true [get_files {{c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.dcp}}]
   read_xdc -mode out_of_context -ref dist_mem_gen_0 -cells U0 {{c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc}}
   set_property processing_order EARLY [get_files {{c:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_ooc.xdc}}]
   read_xdc {{C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc}}

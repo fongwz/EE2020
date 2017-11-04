@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module KEYBOARD_MAP(
+module KEYBOARD_MAP_SPEAKER(
     input [7:0] key,
     input [3:0] clr,
     
@@ -16,8 +16,8 @@ module KEYBOARD_MAP(
     
     output [11:0] final_out
     );
-   
-   reg playback, delay, piano;
+   reg delay;
+   reg playback,  piano;
    wire [11:0] piano_out;
 
     //for piano

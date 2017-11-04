@@ -175,8 +175,7 @@ module AUDIO_FX_TOP(
                              : (TOGGLE_DELAY_TIME == 2'b10) ? clk_delay_750ms
                              : (TOGGLE_DELAY_TIME == 2'b01) ? clk_delay_500ms
                              : clk_delay_250ms;
-                             
-                         
+                                             
       //init delay
       DELAY_INPUT delay250MS(clk_delay_final, MIC_in, delay_out);
       /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -192,23 +191,14 @@ module AUDIO_FX_TOP(
                 startMem = 0;
         //end
       end      
-      
-      
-      ////////////////////////////////////////////////////////////////////////////////////////////////////////
-      ///Seven segment display module
-      always @ (posedge clk_3) begin
-        delay_mic <= MIC_in;
-      end
-      
-      SSegDisp display(delay_mic, clk_700, pulseC, pulseD, pulseE, pulseF, pulseG, TOGGLE_SSDISP, seg, an);
-      ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
       
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       ///Keyboard module
       wire [15:0] keyout;
       wire [11:0] final_out;
       USB_KEYBOARD keyboard(CLK, PS2Data, PS2Clk, keyout);
-      KEYBOARD_MAP map(
+      KEYBOARD_MAP_SPEAKER map(
         keyout[7:0], keyout[15:12], 
         clk_1760, clk_1975, clk_1047, clk_1175, clk_1319, clk_1397, clk_1568, //A,B,C,D,E,F,G
         clk_1865, clk_1109, clk_1245, clk_1480, clk_1661, //A#,C#,D#,F#,G#
@@ -219,12 +209,17 @@ module AUDIO_FX_TOP(
       //assign led = keyout[15:0]; //checker, uncomment when not needed
       ////////////////////////////////////////////////////////////////////////////////////////////////////////
       
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////
+      ///Seven segment display module
+      always @ (posedge clk_3) begin
+          delay_mic <= MIC_in;
+      end
+            
+      SSegDisp display(delay_mic, clk_700, keyout, seg, an);
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////
       
-
-      
-
       volume_indicator volume_led(clk_700, MIC_in, led);
-      assign speaker_out = (TOGGLE_PIANO)? final_out : 0;
+      assign speaker_out = (TOGGLE_PIANO)? final_out : delay_out;
 
     /////////////////////////////////////////////////////////////////////////////////////
     //DAC Module: Digital-to-Analog Conversion

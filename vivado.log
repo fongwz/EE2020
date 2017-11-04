@@ -2,10 +2,10 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Fri Nov 03 17:19:41 2017
-# Process ID: 5164
+# Start of session at: Sat Nov 04 12:19:35 2017
+# Process ID: 7388
 # Current directory: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13984 C:\Users\Wei Zheng\Desktop\NUS\Y2S1\EE2020\Project\audio_effects\audio_effects.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16236 C:\Users\Wei Zheng\Desktop\NUS\Y2S1\EE2020\Project\audio_effects\audio_effects.xpr
 # Log file: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/vivado.log
 # Journal file: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects\vivado.jou
 #-----------------------------------------------------------
@@ -16,40 +16,11 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2016.2/data/ip'.
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 805.121 ; gain = 128.684
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 796.305 ; gain = 169.039
 update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
-[Fri Nov 03 17:20:37 2017] Launched dist_mem_gen_0_synth_1, synth_1...
-Run output will be captured here:
-dist_mem_gen_0_synth_1: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/dist_mem_gen_0_synth_1/runme.log
-synth_1: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 17:20:38 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 815.371 ; gain = 1.410
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 17:34:54 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 17:34:54 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 17:38:44 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 17:38:44 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 17:39:17 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 17:39:17 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 17:42:12 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 17:42:12 2017] Launched impl_1...
+[Sat Nov 04 12:24:32 2017] Launched impl_1...
 Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
 open_hw
 connect_hw_server
@@ -63,10 +34,8 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714193A
-set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714400A
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
 Resolution: 
@@ -82,88 +51,51 @@ WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Cha
 Resolution: 
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
 2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 18:07:22 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 18:07:22 2017] Launched impl_1...
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Sat Nov 04 12:40:26 2017] Launched impl_1...
 Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714193A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714193A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
-2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
-2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 18:29:22 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 18:29:22 2017] Launched impl_1...
+[Sat Nov 04 12:41:42 2017] Launched impl_1...
 Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714193A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714193A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
-2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
-2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 18:57:58 2017] Launched synth_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 18:57:58 2017] Launched impl_1...
-Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714193A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714193A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
-2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
-2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
 reset_run impl_1 -prev_step 
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
-[Fri Nov 03 19:12:59 2017] Launched impl_1...
+[Sat Nov 04 12:43:48 2017] Launched impl_1...
 Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Nov 03 19:13:44 2017] Launched synth_1...
+[Sat Nov 04 12:44:33 2017] Launched synth_1...
 Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
-[Fri Nov 03 19:13:44 2017] Launched impl_1...
+[Sat Nov 04 12:44:33 2017] Launched impl_1...
 Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714193A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714193A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 04 12:45:01 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
+[Sat Nov 04 12:45:01 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 04 12:57:26 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
+[Sat Nov 04 12:57:26 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
 Resolution: 
@@ -179,3 +111,9 @@ WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Cha
 Resolution: 
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
 2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Nov 04 13:07:09 2017] Launched synth_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/synth_1/runme.log
+[Sat Nov 04 13:07:09 2017] Launched impl_1...
+Run output will be captured here: C:/Users/Wei Zheng/Desktop/NUS/Y2S1/EE2020/Project/audio_effects/audio_effects.runs/impl_1/runme.log

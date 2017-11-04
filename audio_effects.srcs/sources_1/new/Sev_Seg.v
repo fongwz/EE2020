@@ -7,63 +7,96 @@ module Sev_Seg(
     input [6:0] Hund,
     input [6:0] Tens,
     input [6:0] Ones,
-    input pulseC, pulseD, pulseE, pulseF, pulseG,
-    input switch,
+    input [3:0] key_clear,
+    input [7:0] key_in,
     output reg [6:0] seg,
     output reg [3:0] an
     );
     
-    wire [6:0] seg_piano;
-    reg [1:0] COUNT = (switch)? 0 : 3; 
-    reg [2:0] segShow;
-    
-    assign seg_piano = (segShow==1)?7'b0110001:(segShow==2)?7'b1000010:(segShow==3)?7'b0110000:(segShow==4)?7'b0111000:(segShow==5)?7'b00000100:0;
-    
-    always @ (posedge clk_700hz) begin
-        if(switch==0)begin
-            COUNT = 3;
+    reg [1:0] COUNT;
+    wire CLEAR_PIANO;
+    reg MODE_VOLUME = 1;
+        
+    always @ (key_in) begin
+        if (key_in == 'h16 || key_in  == 'h1E) begin
+            MODE_VOLUME <= 1;
+        end else if (key_in == 'h26) begin
+            MODE_VOLUME <= 0;
         end
-        COUNT = COUNT + switch;
+    end
+     
+    always @ (posedge clk_700hz) begin
+        COUNT = COUNT + 1;
         case (COUNT) 
             2'b00 : 
                 begin 
-                seg = Thou; 
-                an = 4'b0111;
+                    if (MODE_VOLUME) begin
+                        seg = Thou;
+                    end else begin
+                        seg = 7'b11111111;
+                    end
+                    an = 4'b0111;
                 end
             2'b01 : 
                 begin
-                seg = Hund; 
-                an = 4'b1011;
+                    if (MODE_VOLUME) begin
+                        seg = Hund;
+                    end else begin
+                        seg = 7'b11111111; 
+                    end
+                    an = 4'b1011;
                 end
             2'b10 : 
-                begin 
-                seg = Tens; 
+                begin
+                    if (MODE_VOLUME) begin 
+                        seg = Tens;
+                    end else if (key_in == 'h1D && MODE_VOLUME ==0) begin
+                        seg = 7'b0110001; //C
+                    end else if (key_in == 'h24 && MODE_VOLUME ==0) begin
+                        seg = 7'b1000010; //D
+                    end else if (key_in == 'h2C && MODE_VOLUME ==0) begin
+                        seg = 7'b0111000; //E
+                    end else if (key_in == 'h35 && MODE_VOLUME ==0) begin
+                        seg = 7'b0000100; //G
+                    end else if (key_in == 'h3C && MODE_VOLUME ==0) begin
+                        seg = 7'b0001000; //A
+                    end else begin
+                        seg = 7'b1111111;
+                    end 
                 an = 4'b1101;
                 end
             2'b11 : 
                 begin
+                    if (MODE_VOLUME) begin
+                        seg = Ones;
+                    end else if (key_in == 'h1D && MODE_VOLUME ==0) begin 
+                        seg = 7'b0100100; //sharp
+                    end else if (key_in == 'h24 && MODE_VOLUME ==0) begin
+                        seg = 7'b0100100; //sharp
+                    end else if (key_in == 'h2C && MODE_VOLUME ==0) begin
+                        seg = 7'b0100100; //sharp
+                    end else if (key_in == 'h35 && MODE_VOLUME ==0) begin
+                        seg = 7'b0100100; //sharp
+                    end else if (key_in == 'h3C && MODE_VOLUME ==0) begin
+                        seg = 7'b0100100; //sharp
+                    end else if (key_in == 'h1C && MODE_VOLUME ==0) begin
+                        seg = 7'b0110001; //C
+                    end else if (key_in == 'h1B && MODE_VOLUME ==0) begin
+                        seg = 7'b1000010; //D
+                    end else if (key_in == 'h23 && MODE_VOLUME ==0) begin
+                        seg = 7'b0110000; //E
+                    end else if (key_in == 'h2B && MODE_VOLUME ==0) begin
+                        seg = 7'b0111000; //F
+                    end else if (key_in == 'h34 && MODE_VOLUME ==0) begin
+                        seg = 7'b000100; //G
+                    end else if (key_in == 'h33 && MODE_VOLUME ==0) begin
+                        seg = 7'b0001000; //A
+                    end else if (key_in == 'h3B && MODE_VOLUME ==0) begin
+                        seg = 7'b1100000; //B
+                    end else begin
+                        seg = 7'b1111111;
+                    end
                 an = 4'b1110;
-                if (switch) begin
-                    seg = Ones;
-                end           
-                else begin
-                    if (pulseC) begin
-                        segShow = 1;
-                    end
-                    if (pulseD) begin
-                        segShow = 2;
-                    end
-                    if (pulseE) begin
-                        segShow = 3;
-                    end
-                    if (pulseF) begin
-                        segShow = 4;
-                    end
-                    if (pulseG) begin
-                        segShow = 5;
-                    end
-                    seg = seg_piano;
-                end
                 end
         endcase
     end      
